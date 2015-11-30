@@ -136,6 +136,7 @@ on boot
 
 on init
     export LD_SHIM_LIBS /system/vendor/lib/lib-imsvt.so|libshims_ims.so
+    export LD_SHIM_LIBS "/system/bin/mm-qcamera-daemon|libshim_camera.so"
 
 on post-fs
     swapon_all /fstab.qcom
