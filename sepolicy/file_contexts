@@ -4,3 +4,4 @@
 # Partitions
 /dev/block/bootdevice/by-name/cache                  u:object_r:cache_block_device:s0
 /dev/block/bootdevice/by-name/config                 u:object_r:frp_block_device:s0
+/sys/android_touch/doubletap2wake               u:object_r:sysfs_dt2w:s0
