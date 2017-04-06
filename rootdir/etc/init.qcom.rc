@@ -477,3 +477,8 @@ service wcnss-service /system/bin/wcnss_service
     user system
     group system wifi radio
     oneshot
+
+# This fixes broken data connection on netmgrd crash
+on property:sys.boot_completed=1
+    restart ril-daemon
+    restart netmgrd
