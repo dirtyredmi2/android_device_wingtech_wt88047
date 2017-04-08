@@ -12,11 +12,12 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
 
-FORCE_32_BIT := true
+$(call inherit-product-if-exists, vendor/wingtech/wt88047/wt88047-vendor.mk)
 
-DEVICE_PATH := device/wingtech/wt88047
-include $(DEVICE_PATH)/board/*.mk
+# Overlay
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
-# inherit from the proprietary version
--include vendor/wingtech/wt88047/BoardConfigVendor.mk
+# Include package config fragments
+include $(LOCAL_PATH)/product/*.mk
