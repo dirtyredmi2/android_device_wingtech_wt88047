@@ -1,6 +1,5 @@
-# Boot animation
-TARGET_SCREEN_HEIGHT := 1280
-TARGET_SCREEN_WIDTH := 720
+# Use specific resolution for bootanimation
+SMALL_BOOTANIMATION_SIZE := 720x720
 
 # Screen density
 PRODUCT_PROPERTY_OVERRIDES += \
