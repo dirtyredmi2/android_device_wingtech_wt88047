@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FORCE_32_BIT := true
+#FORCE_32_BIT := true
 
 DEVICE_PATH := device/wingtech/wt88047
 include $(DEVICE_PATH)/board/*.mk
