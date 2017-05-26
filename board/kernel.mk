@@ -17,3 +17,10 @@ ENABLE_CPUSETS := true
 ifneq ($(FORCE_32_BIT),true)
 TARGET_USES_UNCOMPRESSED_KERNEL := true
 endif
+
+# Rom Tool Chain
+TARGET_GCC_VERSION_EXP := 4.9
+
+# Kernel Tool Chain
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.8/bin
+KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
